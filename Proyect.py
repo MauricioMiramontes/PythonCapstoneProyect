@@ -1,4 +1,4 @@
-#Hello friend tank you for picking my proyect to review
+#Hello friend thank you for picking my proyect to review
 #Mauricio Miramontes 
 #Ill try to comment everything so you can follow my code without problem 
 #To Do: Use the NewsPaper variable as a global variable 
@@ -62,10 +62,11 @@ def cropFacesFromPage(NewsPaper, Page):
     page_pil = Image.open(NewsPaper.open(Page))
     page_pil = page_pil.convert("RGB")
   
-    #Using the info in the Faces_Squares list a make a Faces List with the croped faces 
+    #Using the info in the Faces_Squares list we can make a Faces List with the croped faces 
     for x,y,w,h in Faces_Squares:
         # And remember this is width and height so we have to add those appropriately.
         Face = page_pil.crop((x,y,x+w,y+h))
+        #I resize the image with the thumbnail() function
         Face.thumbnail(thumbnail_size) 
         FacesList.append(Face)
         
