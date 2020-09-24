@@ -2,6 +2,7 @@
 #Mauricio Miramontes 
 #Ill try to comment everything so you can follow my code without problem 
 #To Do: Use the NewsPaper variable as a global variable 
+#This code needs to be excecuted in a Jupyter Notebook
 
 #The imports
 import zipfile
